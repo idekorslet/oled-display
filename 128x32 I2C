@@ -86,6 +86,9 @@ void loop() {
    
     column_pos = column_pos - 2.5; // scroll speed    
     
+    // jika mendapat error ketika memanggil function / method printMessage
+    // coba konversi dulu variabel yang ingin ditampilkan, misal dari variabel integer ke char
+    // sprintf(nama_variabel_char, "%d", nama_variabel_integer); --> convert nama_variabel_integer (integer type) to nama_variabel_char (char type)
     printMessage(true, title_pos, 0, title, false);
     printMessage(false, column_pos, 18, text, true);
         
